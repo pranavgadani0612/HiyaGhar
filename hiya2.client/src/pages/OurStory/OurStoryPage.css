@@ -1,0 +1,342 @@
+.hiyaghar-story-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF8F2;
+  color: #11223A;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hiyaghar-story-main {
+  flex: 1;
+}
+
+/* Hero Section */
+.hiyaghar-story-hero {
+  position: relative;
+  padding: 80px 24px 60px;
+  background: linear-gradient(180deg, #F5EFE0 0%, #FAF8F2 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.hiyaghar-story-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 15% 20%, rgba(203, 153, 44, 0.08) 0%, transparent 40%),
+                    radial-gradient(circle at 85% 60%, rgba(17, 34, 58, 0.05) 0%, transparent 40%);
+}
+
+.hiyaghar-story-hero-container {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hiyaghar-story-hero-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #CB992C;
+  text-transform: uppercase;
+  background: rgba(203, 153, 44, 0.12);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.hiyaghar-story-hero-title {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #11223A;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.hiyaghar-story-hero-subtitle {
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.6;
+  color: #556575;
+  margin: 0 auto 30px;
+  max-width: 680px;
+}
+
+/* Content Sections Container */
+.hiyaghar-story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Two-column Story Block */
+.hiyaghar-story-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.hiyaghar-story-block.reversed {
+  direction: rtl;
+}
+
+.hiyaghar-story-block.reversed > * {
+  direction: ltr;
+}
+
+.hiyaghar-story-image-wrap {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(17, 34, 58, 0.08);
+  border: 4px solid #ffffff;
+  background-color: #FAF4E8;
+}
+
+.hiyaghar-story-image-wrap img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.hiyaghar-story-image-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.hiyaghar-story-image-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(17, 34, 58, 0.88);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hiyaghar-story-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hiyaghar-story-tag {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #CB992C;
+  text-transform: uppercase;
+}
+
+.hiyaghar-story-heading {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 800;
+  color: #11223A;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.hiyaghar-story-para {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4A5568;
+  margin: 0;
+}
+
+/* Values Grid */
+.hiyaghar-story-values-section {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 60px 40px;
+  border: 1px solid #EFEAE0;
+  box-shadow: 0 10px 30px rgba(17, 34, 58, 0.04);
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.hiyaghar-story-values-header {
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.hiyaghar-story-values-header h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  color: #11223A;
+  margin: 10px 0 12px;
+}
+
+.hiyaghar-story-values-header p {
+  color: #64748B;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hiyaghar-story-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hiyaghar-story-value-card {
+  background: #FAF8F2;
+  border: 1px solid #EAE4D5;
+  border-radius: 18px;
+  padding: 32px 24px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.hiyaghar-story-value-card:hover {
+  transform: translateY(-4px);
+  border-color: #CB992C;
+  box-shadow: 0 12px 24px rgba(203, 153, 44, 0.12);
+}
+
+.hiyaghar-story-value-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #FFF5E0;
+  color: #CB992C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hiyaghar-story-value-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #11223A;
+  margin: 0 0 10px;
+}
+
+.hiyaghar-story-value-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5A6A7D;
+  margin: 0;
+}
+
+/* CTA Box */
+.hiyaghar-story-cta-box {
+  background: linear-gradient(135deg, #11223A 0%, #1D3557 100%);
+  border-radius: 24px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hiyaghar-story-cta-box h2 {
+  font-size: clamp(26px, 3.5vw, 36px);
+  font-weight: 800;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+.hiyaghar-story-cta-box p {
+  font-size: 16px;
+  color: #E2E8F0;
+  max-width: 540px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.hiyaghar-story-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hiyaghar-story-btn-primary {
+  background-color: #CB992C;
+  color: #11223A;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hiyaghar-story-btn-primary:hover {
+  background-color: #dfaa37;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(203, 153, 44, 0.35);
+}
+
+.hiyaghar-story-btn-secondary {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hiyaghar-story-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hiyaghar-story-block {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .hiyaghar-story-block.reversed {
+    direction: ltr;
+  }
+
+  .hiyaghar-story-image-wrap img {
+    height: 300px;
+  }
+
+  .hiyaghar-story-values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hiyaghar-story-values-section {
+    padding: 40px 20px;
+  }
+
+  .hiyaghar-story-cta-box {
+    padding: 40px 20px;
+  }
+}
